@@ -13,13 +13,13 @@ License for the specific language governing permissions and limitations
 under the License.
  
 Description: 
-Extended the facebookbasecass from https://github.com/facebook/facebook-php-sdk
+Extended the facebookbaseclass from https://github.com/facebook/facebook-php-sdk
 Has the intent of using wordpress transients and options tables to cache requests and store persistent data
 
 Installation
 
 Clone this repository
-  git clone git@github.com:sloped/Wordpress-Facebook-Class.git
+  git clone https://github.com/sloped/Wordpress-Facebook-Class.git
 Clone or download the facebook-php-sdk
   git clone https://github.com/facebook/facebook-php-sdk.git
   

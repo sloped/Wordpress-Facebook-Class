@@ -1,0 +1,35 @@
+Wordpress Facebook Class
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain
+a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+ 
+Description: 
+Extended the facebookbasecass from https://github.com/facebook/facebook-php-sdk
+Has the intent of using wordpress transients and options tables to cache requests and store persistent data
+
+Installation
+
+Clone this repository
+  git clone git@github.com:sloped/Wordpress-Facebook-Class.git
+Clone or download the facebook-php-sdk
+  git clone https://github.com/facebook/facebook-php-sdk.git
+  
+Include the BaseFacebook class and the wordpress-facebook-class.php in your plugin's main file. If you clone these into your plugin directory this should work. 
+	include "facebook-php-sdk/src/base_facebook.php";
+	include "wordpress-facebook-class/wordpress-facebook-class.php";
+
+Please see the documentatation at https://developers.facebook.com/docs/reference/php/ 
+
+This class provides one extended function unrelated to Wordpress, it allows you to get an extended access token from Facebook. 
+For more information please see https://developers.facebook.com/docs/offline-access-deprecation/ 
+
+This class provides no additional support for Wordpress, you will need to write the functions to retrieve and store access tokens required to authorizes users. 

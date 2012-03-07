@@ -22,7 +22,7 @@
 class Mspsf_Facebook extends BaseFacebook {
 
 	var $user_id = '';
-  
+  /*
    * @param Array $config the application configuration.
    * @see BaseFacebook::__construct in facebook.php
    */
